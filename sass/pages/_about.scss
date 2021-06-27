@@ -19,6 +19,11 @@
             justify-content: center;
             margin-bottom: 9.6rem;
         }
+
+        @include respond(phones) {
+            flex-direction: column;
+            position: relative;
+        }
     }
 
     &-left {
@@ -40,6 +45,14 @@
         }
     }
 
+    &-left-3 {
+
+        @include respond(phones) {
+            position: absolute;
+            left: 21px;
+        }
+    }
+
     &-card {
         width: 35rem;
         height: 20.4rem;
@@ -56,6 +69,27 @@
             padding-top: 7rem;
             margin-right: 1rem;
         }
+
+        @include respond(phones) {
+            width: 32.7rem;
+            height: 16.5rem;
+            margin-bottom: 6.8rem;
+        }
+
+        &-card:nth-child(3) {
+
+            @include respond(phones) {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
+    &-card--9 {
+
+        @include respond(phones) {
+            margin-bottom: 0;
+        }
     }
 
     &-card:last-child {
@@ -71,14 +105,13 @@
 
     &-card::before {
         @include baImages (12.2rem, 16rem, "../../images/new-page-img1.svg");
-        // filter: blur(43.4px);
         position: absolute;
         top: -5rem;
 
         @include respond(tablets) {
             @include baImages (7.9rem, 10.4rem, "../../images/new-page-img1.svg");
             position: absolute;
-            top: -5rem;
+            top: 19rem;
         }
     }
 
@@ -88,7 +121,7 @@
         @include respond(tablets) {
             @include baImages (8.4rem, 10.1rem, "../../images/new-page-img2.svg");
             position: absolute;
-            top: -5rem;
+            top: 42rem;
         }
     }
 
@@ -141,6 +174,8 @@
             padding-top: 15rem;
         }
     }
+
+
 
     &__text::after {
         @include baImages (10px, 10px, "../../images/new-strelka.svg");

@@ -8,6 +8,18 @@
         height: 40rem;
     }
 
+    @include respond(phones) {
+        width: 37.5rem;
+        height: 65.4rem;
+    }
+
+    &-draw .list--home {
+        display: grid;
+        margin-top: 4.9rem;
+        position: absolute;
+        left: 130px;
+    }
+
     &-top {
         margin-top: 7.1rem;
         display: flex;
@@ -17,10 +29,17 @@
             position: relative;
             display: grid;
         }
+
+        @include respond(phones) {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        }
     }
 
     &-left {
         display: grid;
+
     }
 
     &__text {
@@ -32,6 +51,10 @@
         line-height: 2.5rem;
         color: rgba(255, 255, 255, .5);
         text-decoration: none;
+
+        @include respond(phones) {
+            text-align: center;
+        }
     }
 
     &-right-svg--7 {
@@ -43,6 +66,11 @@
             right: 15px;
             top: 160px;
             margin: 0;
+        }
+
+        @include respond(phones) {
+            position: absolute;
+            bottom: 0;
         }
     }
 
@@ -59,6 +87,12 @@
 
     }
 
+    &-left-img {
+        @include respond(phones) {
+            text-align: center;
+        }
+    }
+
     &__svg:last-child {
         margin-right: 0;
     }
@@ -72,6 +106,12 @@
             display: flex;
             position: absolute;
             top: 25.1rem;
+        }
+
+        @include respond(phones) {
+            position: absolute;
+            top: 52rem;
+            left: 118px;
         }
     }
 }
