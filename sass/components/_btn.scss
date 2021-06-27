@@ -1,0 +1,91 @@
+.btn {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #D87D4A;
+    padding: 1.5rem 3rem;
+
+    @include respond(tablets) {
+        width: 16rem;
+        z-index: 3;
+    }
+
+
+
+    &--dark4:hover {
+        background: #fad390;
+        transition: color .4 ease-in;
+    }
+
+    &--dark4:active {
+        background: #ff9f43;
+        transition: color .4 ease-in;
+    }
+
+    &--dark {
+        background: $color-black-00;
+    }
+
+    &--dark:hover {
+        background: #7f8c8d;
+        transition: color .4 ease-in;
+    }
+
+    &--dark:active {
+        background: #4C4C4C;
+        transition: color .4 ease-in;
+    }
+
+    &--dark2 {
+        border: 2px solid black;
+        background: none;
+        color: $color-black-00;
+    }
+
+    &--dark2:hover {
+        background: $color-black-00;
+        color: $color-white;
+        transition: color .4 ease-in;
+    }
+
+    &--dark2:active {
+        background: rgba(0, 0, 0, .9);
+        color: $color-white;
+        transition: color .4 ease-in;
+    }
+
+    &--dark7 {
+        padding: 15px 83px;
+    }
+
+    &--dark8 {
+        padding: 15px 106px;
+        display: none;
+    }
+
+    &--dark7:active {
+        background: #FBAF85;
+    }
+
+    &--dark7 {
+        @include respond(tablets) {
+            padding: 15px 273px;
+        }
+    }
+
+    &--dark8:active {
+        background: #FBAF85;
+    }
+
+    &--dark7:checked+&--dark8 {
+        display: inline-block;
+    }
+
+    &-brown:active {
+        background: #FBAF85;
+        transition: color .4 ease-in;
+    }
+}

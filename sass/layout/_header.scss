@@ -1,0 +1,213 @@
+.herro {
+
+    &--section {
+        margin-bottom: 7.9rem;
+    }
+}
+
+.header {
+    width: 100%;
+    height: 72.9rem;
+    background: #0E0E0E;
+
+    @include respond(tablets) {}
+
+    &-hamburger-top {
+        @include respond(tablets) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__text2--last {
+        @include respond(tablets) {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            width: 57.3rem;
+        }
+    }
+
+    &-hamburger {
+        margin-right: 4.2rem;
+    }
+
+    &-hamburger-item {
+        @include respond(tablets) {
+            width: 1.6rem;
+            height: 3px;
+            background: #fff;
+            margin-bottom: 3px;
+        }
+    }
+
+    &-hamburger-item:last-child {
+        @include respond(tablets) {
+            margin-bottom: 0;
+        }
+
+    }
+
+    &--five {
+        height: 9.7rem;
+    }
+
+
+    &--second {
+        width: 100%;
+        height: 33.6rem;
+    }
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 3.2rem;
+        padding-bottom: 3.6rem;
+    }
+
+    &-head {
+        display: flex;
+        justify-content: space-between;
+
+        @include respond(tablets) {
+            justify-content: center;
+        }
+    }
+
+    &-left {
+        margin-top: 12.8rem;
+
+        @include respond(tablets) {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 3;
+            margin-top: 12.5rem;
+            position: absolute;
+            top: 12.7rem;
+        }
+    }
+
+    &-right--1 {
+        background-image: url(../../images/tablet-naushnik.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        width: 60rem;
+        height: 62.5rem;
+
+        @include respond(tablets) {
+            width: 100rem;
+            height: 63rem;
+            position: absolute;
+            left: 47px;
+        }
+    }
+
+    &__text1 {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, .5);
+        mix-blend-mode: normal;
+        margin-bottom: 2.4rem;
+    }
+
+    &__heading {
+        width: 39.6rem;
+        font-size: 5.6rem;
+        line-height: 5.8rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        @include respond(tablets) {
+            margin: 0;
+        }
+    }
+
+    &__heading--7 {
+
+        @include respond(tablets) {
+            margin: 0;
+        }
+    }
+
+
+    &__heading--07 {
+        width: 26.1rem;
+
+    }
+
+    &__h1 {
+        font-size: 4rem;
+        line-height: 4.4rem;
+        text-align: center;
+        letter-spacing: 1.42857px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0;
+    }
+
+    &__text2 {
+        width: 34.9rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: rgba(255, 255, 255, .75);
+        mix-blend-mode: normal;
+        margin-bottom: 5rem;
+        margin-top: 2.4rem;
+        text-decoration: none;
+
+        @include respond(tablets) {
+            width: 573px;
+        }
+    }
+
+    &__text2--last {
+        margin-top: 3.2rem;
+        color: rgba(0, 0, 0, .5);
+        width: 44.5rem;
+        margin-bottom: 0;
+
+        @include respond(tablets) {
+            width: 57.3rem;
+        }
+    }
+
+    &__text2--19 {
+        @include respond(tablets) {
+            width: 34.9rem;
+        }
+    }
+
+    &__text2--35 {
+        @include respond(tablets) {
+            width: 34.9rem;
+        }
+    }
+
+    &__text2--margin {
+        width: 53rem;
+        color: rgba(255, 255, 255, .30);
+        margin-top: 3.6rem;
+
+        @include respond(tablets) {
+            width: 68.9rem;
+            padding-top: 6.3rem;
+        }
+    }
+
+    &-line9 {
+        margin-bottom: 9.8rem;
+    }
+}
+
+.hr__line {
+    background: rgba(255, 255, 255, .2);
+    mix-blend-mode: normal;
+    height: 1px;
+}

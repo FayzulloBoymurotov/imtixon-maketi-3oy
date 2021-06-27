@@ -1,0 +1,35 @@
+.list {
+    display: flex;
+
+    &--home {
+        @include respond(tablets) {
+            position: absolute;
+            top: 60px;
+        }
+    }
+
+    &--home1 {
+        @include respond(tablets) {
+            display: none;
+        }
+    }
+
+    &__item {
+        margin-right: 3.4rem;
+        list-style: none;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+}

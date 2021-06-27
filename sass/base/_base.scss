@@ -14,12 +14,33 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Manrope', sans-serif;
+}
+
+.form-body {
+  background: #F2F2F2;
+}
+
+.body-colors {
+  background: #f1f2f6;
+
+  @include respond(tablets) {
+    background: #ecf0f1;
+  }
 }
 
 .container {
   width: 100%;
   max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-tablet {
+  width: 100%;
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;

@@ -1,0 +1,112 @@
+// SECTION-LIST
+
+.list {
+
+    &__link:hover {
+        color: #D87D4A;
+        transition: color .4 ease-in;
+    }
+
+    &__link:active {
+        color: #ffaf40;
+        transition: color .4 ease-in;
+    }
+
+}
+
+// SECTION-HEADER
+
+.header {
+    &__btn:active {
+        background: rgba(251, 175, 133, .9);
+        transition: color .4 ease-in;
+    }
+}
+
+.new {
+
+    &__text:hover {
+        color: $color-dark-pink;
+        transition: color .4 ease-in;
+    }
+
+    &__text:active {
+        color: #d35400;
+    }
+}
+
+// SECTION-FOOTER
+
+.footer {
+
+    &__svg:hover {
+        color: $color-dark-pink;
+        transition: color .4 ease-in;
+    }
+
+    &__svg:active {
+        color: #ffbe76;
+        transition: color .4 ease-in;
+    }
+}
+
+
+// SECTION-LIFE
+
+.life {
+
+    &-pm:hover {
+        color: #fdcb6e;
+        transition: color .4 ease-in;
+    }
+
+    &-pm:active {
+        color: $color-dark-pink;
+        transition: color .4 ease-in;
+    }
+}
+
+// SECTION-FORM
+
+.input {
+
+
+    &__name:focus {
+        border: 2px solid #DC4D41;
+    }
+
+    &__name:valid {
+        border: 2px solid #D87D4A;
+    }
+
+    &__name:focus:invalid {
+        border: 2px solid #DC4D41;
+    }
+
+    &__email:focus {
+        border: 2px solid #DC4D41;
+    }
+
+    &__email:valid {
+        border: 2px solid #D87D4A;
+    }
+
+    &__email:focus:invalid {
+        border: 2px solid #DC4D41;
+    }
+
+    &-link6:hover {
+        color: #e67e22;
+        transition: color .5 ease-in;
+    }
+
+    &-link6:active {
+        color: #d35400;
+        transition: color .5 ease-in;
+    }
+
+}
+
+.input:active {
+    border: none;
+}

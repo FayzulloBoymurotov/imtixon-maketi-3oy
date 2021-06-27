@@ -1,0 +1,195 @@
+.new {
+
+    &-top-head {
+        @include respond(tablets) {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &-top {
+        margin-top: 20rem;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        @include respond(tablets) {
+            justify-content: center;
+            margin-bottom: 9.6rem;
+        }
+    }
+
+    &-left {
+        background-image: url(../../images/new-page-img2.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 41rem;
+        height: 49.3rem;
+        z-index: 1;
+    }
+
+    &-left--1 {
+        @include respond(tablets) {
+            width: 19.7rem;
+            height: 23.7rem;
+            position: absolute;
+            top: 5.4rem;
+        }
+    }
+
+    &-card {
+        width: 35rem;
+        height: 20.4rem;
+        background: #F1F1F1;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 11.6rem;
+
+        @include respond(tablets) {
+            width: 22.3rem;
+            height: 16.5rem;
+            padding-top: 7rem;
+            margin-right: 1rem;
+        }
+    }
+
+    &-card:last-child {
+        @include respond(tablets) {
+            margin-right: 0;
+        }
+    }
+
+    &-card--last::before {
+        position: absolute;
+        top: 262rem;
+    }
+
+    &-card::before {
+        @include baImages (12.2rem, 16rem, "../../images/new-page-img1.svg");
+        // filter: blur(43.4px);
+        position: absolute;
+        top: -5rem;
+
+        @include respond(tablets) {
+            @include baImages (7.9rem, 10.4rem, "../../images/new-page-img1.svg");
+            position: absolute;
+            top: -5rem;
+        }
+    }
+
+    &-card:nth-child(2):before {
+        @include baImages (12.5rem, 14.9rem, "../../images/new-page-img2.svg");
+
+        @include respond(tablets) {
+            @include baImages (8.4rem, 10.1rem, "../../images/new-page-img2.svg");
+            position: absolute;
+            top: -5rem;
+        }
+    }
+
+    &-card:nth-child(3):before {
+        @include baImages (17.8rem, 16.1rem, "../../images/22.svg");
+
+        @include respond(tablets) {
+            @include baImages (11rem, 11rem, "../../images/22.svg");
+            position: absolute;
+            top: -5rem;
+        }
+    }
+
+    &__heading {
+        font-size: 1.8rem;
+        line-height: 3.9rem;
+        letter-spacing: 1.28571px;
+        text-transform: uppercase;
+        color: #000000;
+
+        @include respond(tablets) {
+            font-size: 1.5rem;
+            line-height: 5rem;
+        }
+    }
+
+    &__text {
+        font-weight: 900;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, .5);
+        mix-blend-mode: normal;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    &-right {
+        margin-top: 2.9rem;
+    }
+
+    &-right--1 {
+        @include respond(tablets) {
+            text-align: center;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            padding-top: 15rem;
+        }
+    }
+
+    &__text::after {
+        @include baImages (10px, 10px, "../../images/new-strelka.svg");
+        margin-left: 1.3rem;
+    }
+
+    &-top2 {
+        height: 56rem;
+        background: $color-dark-pink;
+        margin-top: 16.8rem;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 9.6rem;
+        z-index: 3;
+
+        @include respond(tablets) {
+            width: 68.9rem;
+            height: 72rem;
+            justify-content: space-evenly;
+            margin: 0 2.5rem;
+            display: block;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+    }
+
+    &-top3 {
+        margin-top: 4.8rem;
+        @include baImages(1110px, 320px, "../../images/Bitmap.png");
+        padding-left: 9.5rem;
+        padding-top: 4.5rem;
+        border-radius: 8px;
+
+        @include respond(tablets) {
+            display: none;
+            @include baImages(689px, 320px, "../../images/samufer-kalonka.png");
+            justify-content: center;
+            flex-direction: column;
+        }
+
+    }
+
+    &__heading3 {
+        font-size: 2.8rem;
+        line-height: 13.3rem;
+        letter-spacing: 2px;
+        color: #000000;
+    }
+}
