@@ -1807,12 +1807,44 @@ template {
   }
 }
 
-.footer-draw .list--home {
-  display: -ms-grid;
-  display: grid;
-  margin-top: 4.9rem;
-  position: absolute;
-  left: 130px;
+@media only screen and (max-width: 600px) {
+  .footer-draw .list--home {
+    display: -ms-grid;
+    display: grid;
+    margin-top: 4.9rem;
+    position: absolute;
+    left: 130px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-draw .list--home {
+    display: -ms-grid;
+    display: grid;
+    margin-top: 4.9rem;
+    position: absolute;
+    left: 130px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer-draw .list--home {
+    display: -ms-grid;
+    display: grid;
+    margin-top: 4.9rem;
+    position: absolute;
+    left: 130px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .footer-draw .list--home {
+    display: -ms-grid;
+    display: grid;
+    margin-top: 4.9rem;
+    position: absolute;
+    left: 130px;
+  }
 }
 
 .footer-top {

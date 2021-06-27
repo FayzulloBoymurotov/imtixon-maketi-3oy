@@ -14,10 +14,12 @@
     }
 
     &-draw .list--home {
-        display: grid;
-        margin-top: 4.9rem;
-        position: absolute;
-        left: 130px;
+        @include respond(phones) {
+            display: grid;
+            margin-top: 4.9rem;
+            position: absolute;
+            left: 130px;
+        }
     }
 
     &-top {
