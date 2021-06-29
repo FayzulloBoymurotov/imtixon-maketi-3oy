@@ -88,14 +88,6 @@
         }
     }
 
-    &-left--99 {
-        @include respond(phones) {
-            flex-direction: column;
-            display: flex;
-            align-items: center;
-        }
-    }
-
     &-right--1 {
         background-image: url(../../images/tablet-naushnik.png);
         background-repeat: no-repeat;
@@ -109,14 +101,6 @@
             height: 63rem;
             position: absolute;
             left: 47px;
-        }
-
-        @include respond(phones) {
-            position: absolute;
-            left: -107px;
-            top: 7rem;
-            width: 156rem;
-            height: 55rem;
         }
     }
 
@@ -148,12 +132,6 @@
 
         @include respond(tablets) {
             margin: 0;
-        }
-
-        @include respond(phones) {
-            font-size: 36px;
-            line-height: 40px;
-            text-align: center;
         }
     }
 
@@ -187,10 +165,6 @@
         @include respond(tablets) {
             width: 573px;
         }
-
-        @include respond(phones) {
-            width: 32.7rem;
-        }
     }
 
     &__text2--last {
@@ -201,18 +175,6 @@
 
         @include respond(tablets) {
             width: 57.3rem;
-        }
-
-        @include respond(phones) {
-            width: 32.7rem;
-        }
-    }
-
-    &__img2 {
-
-        @include respond(phones) {
-            width: 32.7rem;
-            height: 35rem;
         }
     }
 
@@ -238,11 +200,6 @@
             padding-top: 6.3rem;
         }
 
-        @include respond(phones) {
-            width: 32.7rem;
-            text-align: center;
-            margin-top: 16rem;
-        }
     }
 
     &-line9 {

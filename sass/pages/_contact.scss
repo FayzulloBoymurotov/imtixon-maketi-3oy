@@ -28,25 +28,6 @@
         }
     }
 
-    &__heading {
-
-        @include respond(phones) {
-            width: 32.7rem;
-            font-size: 28px;
-            line-height: 38px;
-            text-align: center;
-        }
-    }
-
-    &__heading--21 {
-
-        @include respond(phones) {
-            width: 32.7rem;
-            font-size: 28px;
-            line-height: 38px;
-            text-align: center;
-        }
-    }
 
     &-tophead--5 {
         justify-content: space-between;
@@ -115,6 +96,12 @@
         }
     }
 
+    &__img-91 {
+        position: absolute;
+        left: 7rem;
+    }
+
+
     &-left--14 {
 
         @include respond(tablets) {
@@ -177,11 +164,6 @@
         }
     }
 
-    &-left {
-        width: 32.7rem;
-        height: 35.2rem;
-    }
-
 
     &__img--04 {
         position: absolute;
@@ -224,11 +206,6 @@
             position: absolute;
             top: 4.3rem;
             left: 22rem;
-        }
-
-        @include respond(phones) {
-            position: absolute;
-            left: 5rem;
         }
     }
 
@@ -278,14 +255,7 @@
             top: 4.3rem;
             left: 24rem;
         }
-
-        @include respond(phones) {
-            position: absolute;
-            top: 4.3rem;
-            left: 8rem;
-        }
     }
-
 
     &__img--5 {
         top: 13.3rem;
@@ -408,12 +378,6 @@
         margin-top: 1.6rem;
         margin-bottom: 3.2rem;
 
-        @include respond(phones) {
-            width: 32.7rem;
-            font-size: 28px;
-            line-height: 38px;
-            text-align: center;
-        }
     }
 
     &__heading--1 {
@@ -603,6 +567,7 @@
     }
 
     &__img5 {
+        border-radius: 8px;
 
         @include respond(tablets) {
             width: 407px;
